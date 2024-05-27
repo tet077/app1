@@ -14,8 +14,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Εκθέστε τη θύρα στην οποία τρέχει η εφαρμογή (π.χ., 5000)
-EXPOSE 5000
+EXPOSE 8501
 
 # Ορίστε την εντολή που θα εκτελείται κατά την εκκίνηση του container
-CMD ["python", "main.py"]
+CMD ["streamlit", "run", "main.py"]
 
